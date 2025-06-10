@@ -116,8 +116,12 @@
        
 
     <div class="form-group">
-            <strong>address:</strong>
+            <strong>Address:</strong>
             {!! Form::text('address', null, array('placeholder' => 'address','class' => 'form-control')) !!}
+        </div>
+        <div class="form-group">
+            <strong>Grade:</strong>
+            {!! Form::text('grade', null, array('placeholder' => 'grade','class' => 'form-control')) !!}
         </div>
 
 

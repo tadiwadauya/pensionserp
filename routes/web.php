@@ -5,6 +5,10 @@ use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\JobTitleController;
 use App\Http\Controllers\UsermanagementController;
 use App\Http\Controllers\SectionController;
+use App\Http\Controllers\PeriodController;
+use App\Http\Controllers\ContractController;
+use App\Http\Controllers\TargetController;
+use App\Http\Controllers\ObjectiveController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +36,10 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('jobtitles', JobTitleController::class);
     Route::resource('users', UsermanagementController::class);
     Route::resource('jobtitles', JobTitleController::class);
+    Route::resource('contracts', ContractController::class);
+    Route::resource('periods', PeriodController::class);
+    Route::resource('targets', TargetController::class);
+    Route::resource('objectives', ObjectiveController::class);
 });
 
 

@@ -13,8 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('perfomances', function (Blueprint $table) {
+        Schema::create('targets', function (Blueprint $table) {
             $table->id();
+            $table->string('target_name');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('perfomances');
+        Schema::dropIfExists('targets');
     }
 };

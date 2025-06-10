@@ -69,7 +69,7 @@ class DepartmentController extends Controller
          request()->validate([
             'department' => 'required',
             'manager' => 'required',
-            'asst_manager' => 'required',
+            'asst_manager' => 'nullable|string|max:255', // Moved 'string' inside the rules
         ]);
     
         $department->update($request->all());

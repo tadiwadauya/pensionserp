@@ -32,6 +32,7 @@ class User extends Authenticatable
         'speeddial',
         'gender',
         'dob',
+        'grade',
         'is_admin' // adding this
     ];
 

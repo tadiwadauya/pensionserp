@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('section')->nullable();
             $table->string('gender')->nullable();
             $table->string('dob')->nullable();
+            $table->string('grade')->nullable();
             $table->boolean('is_admin')->nullable(); // adding this
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

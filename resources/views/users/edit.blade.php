@@ -102,10 +102,17 @@
 
     <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
-            <strong>address:</strong>
+            <strong>Address:</strong>
             {!! Form::text('address', null, array('placeholder' => 'address','class' => 'form-control')) !!}
         </div>
     </div>
+    <div class="col-xs-6 col-sm-6 col-md-6">
+        <div class="form-group">
+            <strong>Grade:</strong>
+            {!! Form::text('grade', null, array('placeholder' => 'grade','class' => 'form-control')) !!}
+        </div>
+    </div>
+    grade
     <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <strong>mobile:</strong>

@@ -123,6 +123,7 @@ class UsermanagementController extends Controller
             'speeddial' => 'nullable|string|max:10', // Adjust max length as needed
             'gender' => 'nullable|string|max:10', // Adjust max length as needed
             'dob' => 'nullable|date', // Ensure dob is a valid date
+            'grade' => 'nullable|string|max:10', // Ensure dob is a valid date
         ]);
     
         $input = $request->all();
